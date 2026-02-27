@@ -28,5 +28,26 @@ textbox.addEventListener('keydown', (event) => {
     }
 });
 
+
+/*
+- Add event listeners to each button.
+- Change the label’s font color to the corresponding color when a button is clicked.
+  The buttons will have the following functionality:
+    * Red Button: Change the label’s font color to red.
+    * Blue Button: Change the label’s font color to blue.
+    * Green Button: Change the label’s font color to green.
+    * Orange Button: Change the label’s font color to orange.
+    * Purple Button: Change the label’s font color to purple.
+*/
+function setColour(colour) {
+    label.style.color = colour;
+}
+
+document.getElementById('redButton').addEventListener('click',setColour('red'));
+document.getElementById('blueButton').addEventListener('click',setColour('blue'));
+document.getElementById('greenButton').addEventListener('click',setColour('green'));
+document.getElementById('orangeButton').addEventListener('click',setColour('orange'));
+document.getElementById('purpleButton').addEventListener('click',setColour('purple'));
+
 </script>
 </html>
