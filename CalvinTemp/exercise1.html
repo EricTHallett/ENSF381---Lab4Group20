@@ -43,11 +43,11 @@ function setColour(colour) {
     label.style.color = colour;
 }
 
-document.getElementById('redButton').addEventListener('click',setColour('red'));
-document.getElementById('blueButton').addEventListener('click',setColour('blue'));
-document.getElementById('greenButton').addEventListener('click',setColour('green'));
-document.getElementById('orangeButton').addEventListener('click',setColour('orange'));
-document.getElementById('purpleButton').addEventListener('click',setColour('purple'));
+document.getElementById('redButton').addEventListener('click',()=>{ setColour('red') });
+document.getElementById('blueButton').addEventListener('click',()=>{ setColour('blue') });
+document.getElementById('greenButton').addEventListener('click',()=>{ setColour('green') });
+document.getElementById('orangeButton').addEventListener('click',()=>{ setColour('orange') });
+document.getElementById('purpleButton').addEventListener('click',()=>{ setColour('purple') });
 
 </script>
 </html>
